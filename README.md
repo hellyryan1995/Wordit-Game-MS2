@@ -32,7 +32,7 @@ practical and effective whilst being played on Desktop, Tablet & Mobile.
 
 ### User's Stories
 
-** As a user playing the game I want: ** 
+**As a user playing the game I want:** 
 
 * To be able to understand the game and controls easily.
 * Large clickable buttons on all displays.
@@ -40,7 +40,7 @@ practical and effective whilst being played on Desktop, Tablet & Mobile.
 * See how long I have before I'm out of time.
 * Know what score I just earned.
 
-** As a user playing the game I want: **
+**As a user playing the game I want:**
 
 * To be able to understand the game and controls easily.
 * Large clickable buttons on all displays.
@@ -56,12 +56,12 @@ practical and effective whilst being played on Desktop, Tablet & Mobile.
 
 ### Design Choices
 
-** Fonts **
+**Fonts**
 
 * The font im using through is called [Heebo,](https://fonts.google.com/specimen/Heebo?preview.text_type=custom) 
 within this font I will being using two styles through out the game, 800 & 200
 
-** Colours **
+**Colours**
 
 For the background I went for an of shade of black as it allows user to easily focus on one thing at a time compared to a light background.
 Colour used: #181818
@@ -74,6 +74,7 @@ The buttons are made of four vibrant colour choices which are:
 * Blue - #28CDFF
 * Green - #00E384
 * Yellow - #FFBA19
+
 They are all chosen as with a purpose to be the main focus within the game.
 
 
