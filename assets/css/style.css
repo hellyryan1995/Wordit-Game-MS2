@@ -1,0 +1,42 @@
+/* ------------------------------- Styling and Colour */
+
+body {
+ background-color: #202225;
+ color: #fff;
+}
+
+h3 {
+    color: #fff;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* ------------------------------- Header styling */
+.logo-score {
+    background-color:#202225;
+    border-bottom: solid 1px #B2B2B2;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.score {
+    padding-left: 8px;
+    color: #28CDFF;
+}
+
+.high-score{
+    text-align: right;
+}
+
+.logo {
+    vertical-align: auto;
+}
+
+.position {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/* ------------------------------- Header styling */

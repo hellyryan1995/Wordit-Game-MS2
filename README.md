@@ -106,6 +106,25 @@ The player may also use the key commands displayed on the screen.
 
 * I would like your high score to permanently save with a leaderboard so users can compete to be at the top.
 
+## Technologies Used
+
+
+
+## Testing
+
+
+
+## Deployment
+
+
+
+## Credits
+
+### Content
+
+
+### Acknowledgements
+
 
 
 
