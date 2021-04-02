@@ -64,9 +64,11 @@ within this font I will being using two styles through out the game, 800 & 200
 **Colours**
 
 For the background I went for an of shade of black as it allows user to easily focus on one thing at a time compared to a light background.
+
 Colour used: #181818
 
-Titles: #fffff;
+Titles: #ffffff
+
 Paragprahs & outlines: #B2B2B2
 
 The buttons are made of four vibrant colour choices which are:
@@ -77,13 +79,33 @@ The buttons are made of four vibrant colour choices which are:
 
 They are all chosen as with a purpose to be the main focus within the game.
 
+You can view the final mockup design below:
 
 [WordIt Mockup](assets/images/wireframes/wordit-mockup.jpg)
 
 ### How to Play
 
 Once you click start and you will have to click the button that corresponds with the WORD display in the centre of the screen, 
-you are following the word and not the background colour of the button.  
+you are following the word and not the background colour of the button, the time between each command will reduce and you progress 
+into the forcing you to speed up on selecting the correct command. 
+
 The player may also use the key commands displayed on the screen.
+
+## Features
+
+### Existing Features
+
+* Feature 1 - 4 main buttons which will all be clickable whether or not it's the correct answer.
+* Feature 2 - A start button to begin the game.
+* Feature 3 - Your score will be displayed each time you play the game.
+* Feature 4 - Your high score will be displayed for as long as your playing the game, but once you refresh the page it will reset.
+* Feature 5 - Key commands will be useable on desktop. 
+* Feature 6 - A timer will show you how long you have to click the correct command once it has been given.
+
+### Features Left to Implement
+
+* I would like your high score to permanently save with a leaderboard so users can compete to be at the top.
+
+
 
 
