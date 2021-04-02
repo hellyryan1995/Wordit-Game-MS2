@@ -80,5 +80,10 @@ They are all chosen as with a purpose to be the main focus within the game.
 
 [WordIt Mockup](assets/images/wireframes/wordit-mockup.jpg)
 
+### How to Play
+
+Once you click start and you will have to click the button that corresponds with the WORD display in the centre of the screen, 
+you are following the word and not the background colour of the button.  
+The player may also use the key commands displayed on the screen.
 
 
