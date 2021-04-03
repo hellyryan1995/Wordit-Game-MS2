@@ -54,12 +54,25 @@ h2 {
     margin-top: 3%;
     border: solid 1px #B2B2B2;
     border-radius: 40px;
+    height: 70vh;
 }
 
 .spacing {
     padding: 15px;
 }
 
+.main-game {
+    border-top: solid 1px #B2B2B2;
+    border-bottom: solid 1px #B2B2B2;
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-bottom: 3%;
+}
+
+/* ------------------------------- Center Game Title & Score styling */
 .rnd-score {
     text-align: right;
     margin: auto;
@@ -68,13 +81,37 @@ h2 {
 .score-num {
     color: #FC0050;
 }
+/* ------------------------------- Button styling */
+.button-style {
+    border-radius: 50px;
+    padding: 5px 65px 5px 65px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 22px;
+    border: none;
+}
 
+.button-style:hover,
+.button-style:active,
+.button-style:focus,
+.button-style:active:focus {
+    background-color: rgba(32, 34, 37, 1);
+    color: #fff;
+}
 
-/* ------------------------------- Center Game Title & Score styling */
+#red-button {
+    justify-content: center;
+    background-color: #28CDFF;
+}
 
-
-
-
+/* ------------------------------- key commands styling */
+.key-commands {
+    font-weight: 200;
+    color: #B2B2B2;
+    text-align: center;
+}
 
 /* ------------------------------- Media Queries */
 
