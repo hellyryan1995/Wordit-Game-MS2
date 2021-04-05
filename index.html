@@ -30,40 +30,69 @@
 <!--/.Header-->
 
 <!--Center Game Display-->
-    <section>
-        <div class="container frame">
-            <div class="row spacing">
-                <div class="col-12 col-md-6 col-lg-6">
-                    <h2 class="lets-play">LETS PLAY WORD IT!</h2> 
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-6">
-                    <h3 class="rnd-score">Score: <span class="score-num" id="score">0</span></h3> 
-                </div>
-                    <div class="row main-game">
-                        <div class="col-12">
-                            <button id="red-button" onclick="gameButton()" class="btn btn-warning btn-lg disable button-style" data-type="Red">Red</button>
-                        </div>
-
-                        <div class="col-12 col-md-3 col-lg-3">
-                            <button id="yellow-button" onclick="gameButton()" class="btn btn-warning btn-lg disable button-style" data-type="Yellow">Yellow</button>
-                        </div>
-
-                        <div class="col-12 col-md-3 col-lg-3">
-                            <button id="blue-button" onclick="gameButton()" class="btn btn-warning btn-lg disable button-style" data-type="Blue">Blue</button>
-                        </div>
-
-                         <div class="col-12">
-                            <button id="green-button" onclick="gameButton()" class="btn btn-warning btn-lg disable button-style" data-type="Green">Green</button>
-                        </div>
+    <section class="container frame spacing">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6 d-none d-sm-block">
+                        <h2 class="lets-play">LETS PLAY WORD IT!</h2> 
                     </div>
 
-                <div class="col-12 d-none d-sm-block">
-                    <p class="key-commands">KEYS: W = Red  |  S = Green  |  A = Yellow  |  D = Blue</p> 
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <h3 class="rnd-score">Score: <span class="score-num" id="score">0</span></h3> 
+                    </div>
+                </div>
+            </div>
+
+        <div class="main-game">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 button-layout">
+                        <button id="red-button" onclick="gameButton()" class="btn btn-warning btn-lg disable button-style" data-type="Red">Red</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-4 button-layout">
+                        <button id="yellow-button" onclick="gameButton()" class="btn btn-warning btn-lg disable button-style" data-type="Yellow">Yellow</button>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4 button-layout">
+                        <button type="button" id="startButton" onclick="startGame()" class="btn btn-outline-secondary start-button">Start</button>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4 button-layout">
+                        <button id="blue-button" onclick="gameButton()" class="btn btn-warning btn-lg disable button-style" data-type="Blue">Blue</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 button-layout">
+                        <div id="timer"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 button-layout">
+                        <button id="green-button" onclick="gameButton()" class="btn btn-warning btn-lg disable button-style" data-type="Green">Green</button>
+                    </div>
                 </div>
             </div>
         </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-none d-sm-block">
+                        <p class="key-commands">KEYS: W = Red  |  S = Green  |  A = Yellow  |  D = Blue</p> 
+                    </div>
+                </div>  
+            </div>
     </section>
+<!--/.Center Game Display-->
+
 <!--Footer-->
     <footer>
 
