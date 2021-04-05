@@ -84,26 +84,70 @@ h2 {
 /* ------------------------------- Button styling */
 .button-style {
     border-radius: 50px;
-    padding: 5px 65px 5px 65px;
     font-weight: 800;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-size: 22px;
     border: none;
-}
-
-.button-style:hover,
-.button-style:active,
-.button-style:focus,
-.button-style:active:focus {
-    background-color: rgba(32, 34, 37, 1);
-    color: #fff;
+    text-align: center;
+    width: 180px;
 }
 
 #red-button {
-    justify-content: center;
     background-color: #28CDFF;
+    margin: 0 auto;
+    display: grid;
+}
+
+#red-button:hover,
+#red-button:active,
+#red-button:focus,
+#red-button:active:focus {
+    background-color: rgb(30, 143, 177);
+    color: #fff;
+}
+
+#yellow-button {
+    background-color: #FC0050;
+    margin: 0 auto;
+    display: grid;
+}
+
+#yellow-button:hover,
+#yellow-button:active,
+#yellow-button:focus,
+#yellow-button:active:focus {
+    background-color: rgb(197, 4, 65);
+    color: #fff;
+}
+
+#green-button {
+    background-color: #FFBA19;
+    margin: 0 auto;
+    display: grid;
+}
+
+#green-button:hover,
+#green-button:active,
+#green-button:focus,
+#green-button:active:focus {
+    background-color: rgb(204, 151, 26);
+    color: #fff;
+}
+
+#blue-button {
+    background-color: #00E384;
+    margin: 0 auto;
+    display: grid;
+}
+
+#blue-button:hover,
+#blue-button:active,
+#blue-button:focus,
+#blue-button:active:focus {
+    background-color: rgb(1, 184, 107);
+    color: #fff;
 }
 
 /* ------------------------------- key commands styling */
