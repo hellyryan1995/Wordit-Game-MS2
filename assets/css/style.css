@@ -26,7 +26,7 @@ h2 {
     background-color:#202225;
     border-bottom: solid 1px #B2B2B2;
     width: 100%;
-    padding-top: 15px;
+    padding-top: 9px;
 }
 
 .h-score {
@@ -51,10 +51,10 @@ h2 {
 
 /* ------------------------------- Game Container styling */
 .frame {
-    margin-top: 3%;
+    margin-top: 2%;
     border: solid 1px #B2B2B2;
     border-radius: 40px;
-    height: 75vh;
+    height: 65%;
 }
 
 .spacing {
@@ -65,7 +65,7 @@ h2 {
     border-top: solid 1px #B2B2B2;
     border-bottom: solid 1px #B2B2B2;
     width: 100%;
-    height: 55vh;
+    height: 500px;
     margin: 0 auto;
     padding-top: 3%;
     padding-bottom: 3%;
@@ -97,6 +97,10 @@ h2 {
     margin: auto;
 }
 
+.btn-warning:not(:disabled):not(.disabled):active {
+    border-color: #2f3236;
+}
+
 #red-button {
     background-color: #28CDFF;
     margin: 0 auto;
@@ -109,6 +113,7 @@ h2 {
 #red-button:active:focus {
     background-color: rgb(30, 143, 177);
     color: #fff;
+    border-color: #2f3236;
 }
 
 #yellow-button {
@@ -190,22 +195,152 @@ h2 {
         padding-top: 20px;
     }
 
-    h2 {
-        font-size: 33px;
+    h3 {
+        font-size: 22px;
     }
 
     .rnd-score {
         text-align: left;
     }
 
+    .logo img{
+        margin: 0 auto;
+        display: grid;
+    }
+
+    .frame {
+        border: none;
+    }
+
+    #yellow-button,
+    #blue-button {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+
+    .button-style {
+        font-size: 22px;
+        width: 60%;
+    }
+
+    .start-button {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .main-game {
+    border-bottom: none;
+    height: 76vh;
+    padding-top: 7%;
+}
 }
 
 @media (max-width: 320px) {
+       .high-score {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .rnd-score {
+        text-align: left;
+    }
+
+    .logo img{
+        margin: 0 auto;
+        display: grid;
+    }
+
+    .frame {
+        border: none;
+    }
+
+    #yellow-button,
+    #blue-button {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .button-style {
+        font-size: 18px;
+        width: 60%;
+    }
+
+    .start-button {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .main-game {
+    border-bottom: none;
+    width: 100%;
+    height: 420px;
+    margin: 0 auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 3%;
+}
+
+}
+
+@media (max-width: 375px) {
+    .main-game {
+        padding-top: 5%;
+    }
+
+    #green-button {
+        margin-bottom: 0;
+    }
+
+    .frame {
+        height: 0;
+    }
+}
+
+@media (max-width: 540px) {
+
     h3 {
         font-size: 22px;
     }
 
-    h2 {
-        font-size: 25px;
+      .high-score {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .main-game {
+    border-bottom: none;
+    }
+
+    .rnd-score {
+        text-align: left;
+    }
+
+    .logo img{
+        margin: 0 auto;
+        display: grid;
+    }
+
+    .frame {
+        border: none;
+        height: 0;
+    }
+
+    #yellow-button,
+    #blue-button {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .start-button {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #green-button {
+        margin-bottom: 0;
     }
 }
