@@ -122,6 +122,7 @@ The player may also use the key commands displayed on the screen.
 
 ### Content
 
+* https://websitesetup.org/javascript-cheat-sheet/
 
 ### Acknowledgements
 

@@ -178,6 +178,21 @@ h2 {
     background-color: rgb(204, 151, 26);
     color: #fff;
 }
+/* ------------------------------- Commands styling */
+
+.red-command,
+.blue-command,
+.green-command,
+.yellow-command {
+    display: none;
+}
+
+#red-command-styling,
+#blue-command-styling,
+#green-command-styling,
+#yellow-command-styling {
+    text-align: center; 
+}
 
 /* ------------------------------- key commands styling */
 .key-commands {
