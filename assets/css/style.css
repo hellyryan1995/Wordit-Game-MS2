@@ -65,7 +65,7 @@ h2 {
     border-top: solid 1px #B2B2B2;
     border-bottom: solid 1px #B2B2B2;
     width: 100%;
-    height: 500px;
+    height: 490px;
     margin: 0 auto;
     padding-top: 3%;
     padding-bottom: 3%;
@@ -195,6 +195,10 @@ h2 {
         padding-top: 20px;
     }
 
+    .rnd-score {
+        text-align: center;
+    }
+
     h3 {
         font-size: 22px;
     }
@@ -210,6 +214,7 @@ h2 {
 
     .frame {
         border: none;
+        height: 0;
     }
 
     #yellow-button,
@@ -236,9 +241,13 @@ h2 {
 }
 
 @media (max-width: 320px) {
-       .high-score {
+    .high-score {
         text-align: center;
         padding-top: 20px;
+    }
+
+    .rnd-score {
+        text-align: center;
     }
 
     h3 {
@@ -256,6 +265,7 @@ h2 {
 
     .frame {
         border: none;
+        height: 0;
     }
 
     #yellow-button,
@@ -291,6 +301,10 @@ h2 {
         padding-top: 5%;
     }
 
+    .rnd-score {
+        text-align: center;
+    }
+
     #green-button {
         margin-bottom: 0;
     }
@@ -306,7 +320,11 @@ h2 {
         font-size: 22px;
     }
 
-      .high-score {
+    .rnd-score {
+        text-align: center;
+    }
+
+    .high-score {
         text-align: center;
         padding-top: 20px;
     }
