@@ -164,6 +164,10 @@ h2 {
     margin-bottom: 30%;
 }
 
+/*#startButton {
+    display: none;
+}*/
+
 #green-button {
     background-color: #FFBA19;
     margin: 0 auto;
@@ -192,6 +196,11 @@ h2 {
 #green-command-styling,
 #yellow-command-styling {
     text-align: center; 
+    margin-top: 30%;
+    margin-bottom: 30%;
+    height: 110px;
+    font-size: 40px;
+
 }
 
 /* ------------------------------- key commands styling */
