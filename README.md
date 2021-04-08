@@ -124,6 +124,8 @@ The player may also use the key commands displayed on the screen.
 
 * https://websitesetup.org/javascript-cheat-sheet/
 
+* https://www.w3schools.com/jsref/met_element_getattribute.asp
+
 ### Acknowledgements
 
 
