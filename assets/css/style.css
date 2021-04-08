@@ -164,10 +164,6 @@ h2 {
     margin-bottom: 30%;
 }
 
-/*#startButton {
-    display: none;
-}*/
-
 #green-button {
     background-color: #FFBA19;
     margin: 0 auto;
@@ -257,6 +253,15 @@ h2 {
         margin-bottom: 0;
     }
 
+    #red-command-styling,
+    #blue-command-styling,
+    #green-command-styling,
+    #yellow-command-styling {
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
     .main-game {
     border-bottom: none;
     height: 76vh;
@@ -306,6 +311,15 @@ h2 {
     .start-button {
         margin-top: 0;
         margin-bottom: 0;
+    }
+
+    #red-command-styling,
+    #blue-command-styling,
+    #green-command-styling,
+    #yellow-command-styling {
+        margin-top: 0;
+        margin-bottom: 0;
+
     }
 
     .main-game {
@@ -380,6 +394,15 @@ h2 {
     .start-button {
         margin-top: 0;
         margin-bottom: 0;
+    }
+
+    #red-command-styling,
+    #blue-command-styling,
+    #green-command-styling,
+    #yellow-command-styling {
+        margin-top: 0;
+        margin-bottom: 0;
+
     }
 
     #green-button {
