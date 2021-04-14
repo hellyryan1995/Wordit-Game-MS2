@@ -178,6 +178,10 @@ h2 {
     background-color: rgb(204, 151, 26);
     color: #fff;
 }
+
+.btn-warning:disabled {
+    color:#fff;
+}
 /* ------------------------------- Commands styling */
 
 .red-command,

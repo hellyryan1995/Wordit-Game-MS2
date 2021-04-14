@@ -1,10 +1,9 @@
 let displayTime = document.querySelector("#timer");
-let score = 0;
 let command = randomCommand();
 
 // Removes Start button when the game begins
 function removeButton(){
-    $( "#startButton" ).slice( 0 ).css( "display", "none" );
+    $( "#startButton" ).hide();
 }
 
 // Will create one of the 4 words randomly
@@ -30,18 +29,17 @@ function displayCommand(command) {
     }
 }
 
-function gameButton() {
-}
-
 function startGame() {
     removeButton();
-    score = 0;
-    playGame()
+    resetScore();
+    playGame();
+    displayTimer();
+
     endGame.called = false;
 
 }
 
-function playGame(){
+function playGame() {
 
     // enables the game buttons
     document.getElementById("red-button").disabled = false;
@@ -59,8 +57,10 @@ function playGame(){
     displayCommand(command);
     randomCommand();
     
+    // Once the buttons are clicked and correct the game will continue if not then the game will end
     $("#red-button").click(function() {
         if (command === redBtn) {
+            updateScore();
             playGame();
         } else {
             endGame();
@@ -69,6 +69,7 @@ function playGame(){
 
     $("#yellow-button").click(function(){
         if (command === yellowBtn) {
+            updateScore();
             playGame();
         } else {
             endGame();
@@ -77,6 +78,7 @@ function playGame(){
 
     $("#green-button").click(function(){
         if (command === greenBtn) {
+            updateScore();
             playGame();
         } else {
             endGame();
@@ -85,6 +87,7 @@ function playGame(){
 
     $("#blue-button").click(function(){
         if (command === blueBtn) {
+            updateScore();
             playGame();
         } else {
             endGame();
@@ -111,9 +114,21 @@ function endGame() {
 
 }
 
+function displayTimer() {
+}
+
+// this will update the score once you click the correct answer
 function updateScore() {
+    score += 1;
+  $("#score")[0].innerHTML = score;
 
 }
+
+// This will reset the score back to 0 once the game starts again
+function resetScore(){
+    score = 0;
+    $('#score').text(score);
+} // help from stackoverflow
 
 function updateHighscore(){
 

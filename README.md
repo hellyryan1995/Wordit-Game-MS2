@@ -126,6 +126,8 @@ The player may also use the key commands displayed on the screen.
 
 * https://www.w3schools.com/jsref/met_element_getattribute.asp
 
+* https://stackoverflow.com/questions/7381712/how-to-reset-my-score-javascript
+
 ### Acknowledgements
 
 
