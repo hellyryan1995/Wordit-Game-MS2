@@ -224,6 +224,25 @@ h2 {
     transform: translate(-50%, -50%);*/
 }
 
+/* ------------------------------- Media Queries */
+#myModal h3{
+    color: #202225;
+}
+
+#myModal p{
+    color: #202225;
+}
+
+.modal-button {
+    background-color: #FC0050;
+}
+
+.modal-button:hover,
+.modal-button:active,
+.modal-button:focus,
+.modal-button:active:focus {
+    background-color: rgb(197, 4, 65);
+}
 
 /* ------------------------------- Media Queries */
 

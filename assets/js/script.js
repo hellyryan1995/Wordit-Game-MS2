@@ -129,7 +129,7 @@ const startBtn = document.querySelector("#startButton");
 let timeLeft = 3;
 
 function displayTimer() {
-    
+    // Help From Code with Ania Kubów yon youtube
     setInterval(function(){
         if(timeLeft <= 0 ) {
             endGame();
@@ -159,3 +159,4 @@ function resetScore(){
 function updateHighscore(){
 
 }
+

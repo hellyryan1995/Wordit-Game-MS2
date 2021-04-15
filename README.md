@@ -126,6 +126,8 @@ The player may also use the key commands displayed on the screen.
 
 * https://stackoverflow.com/questions/7381712/how-to-reset-my-score-javascript
 
+* https://www.youtube.com/watch?v=vSV_Ml2_A88&ab_channel=CodewithAniaKub%C3%B3w
+
 ### Acknowledgements
 
 
