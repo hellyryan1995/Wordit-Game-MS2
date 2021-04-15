@@ -1,5 +1,3 @@
-let displayTime = document.querySelector("#timer");
-let command = randomCommand();
 
 // Removes Start button when the game begins
 function removeButton(){
@@ -30,13 +28,12 @@ function displayCommand(command) {
 }
 
 function startGame() {
+    endGame.called = false;
+
     removeButton();
     resetScore();
     playGame();
     displayTimer();
-
-    endGame.called = false;
-
 }
 
 function playGame() {
@@ -52,15 +49,20 @@ function playGame() {
     let yellowBtn = document.getElementById("yellow-button").getAttribute("data-type");
     let greenBtn = document.getElementById("green-button").getAttribute("data-type");
     let blueBtn = document.getElementById("blue-button").getAttribute("data-type");
+    $( "#red-command-styling" ).addClass("red-command");
+    $( "#yellow-command-styling" ).addClass("yellow-command");
+    $( "#green-command-styling" ).addClass("green-command");
+    $( "#blue-command-styling" ).addClass("blue-command");
     
     // Once game has started this will display the commands
+    let command = randomCommand();
     displayCommand(command);
-    randomCommand();
     
     // Once the buttons are clicked and correct the game will continue if not then the game will end
     $("#red-button").click(function() {
         if (command === redBtn) {
             updateScore();
+            $( "#red-command-styling" ).addClass("red-command");
             playGame();
         } else {
             endGame();
@@ -70,6 +72,7 @@ function playGame() {
     $("#yellow-button").click(function(){
         if (command === yellowBtn) {
             updateScore();
+            $( "#yellow-command-styling" ).addClass("yellow-command");
             playGame();
         } else {
             endGame();
@@ -79,6 +82,7 @@ function playGame() {
     $("#green-button").click(function(){
         if (command === greenBtn) {
             updateScore();
+            $( "#green-command-styling" ).addClass("green-command");
             playGame();
         } else {
             endGame();
@@ -88,6 +92,7 @@ function playGame() {
     $("#blue-button").click(function(){
         if (command === blueBtn) {
             updateScore();
+            $( "#blue-command-styling" ).addClass("blue-command");
             playGame();
         } else {
             endGame();
@@ -98,14 +103,19 @@ function playGame() {
 
 function endGame() {
 
+    endGame.called = true;
+
     //alert("Game over! You Lost!");
     $("#startButton").show();
     //disables the game buttons
-    endGame.called = true;
-    document.getElementById("red-command-styling").classList.add("red-command");
-    document.getElementById("yellow-command-styling").classList.add("yellow-command");
-    document.getElementById("blue-command-styling").classList.add("blue-command");
-    document.getElementById("green-command-styling").classList.add("green-command");
+
+    // Hide Timer
+    $("#timer").hide();
+
+    $( "#red-command-styling" ).addClass("red-command");
+    $( "#yellow-command-styling" ).addClass("yellow-command");
+    $( "#green-command-styling" ).addClass("green-command");
+    $( "#blue-command-styling" ).addClass("blue-command");
 
     document.getElementById("red-button").disabled = true;
     document.getElementById("yellow-button").disabled = true;
@@ -114,12 +124,28 @@ function endGame() {
 
 }
 
+const timeleftDisplay = document.querySelector("#timer");
+const startBtn = document.querySelector("#startButton");
+let timeLeft = 3;
+
 function displayTimer() {
-}
+    
+    setInterval(function(){
+        if(timeLeft <= 0 ) {
+            endGame();
+            clearInterval(timeLeft = 0);
+        }
+
+        timeleftDisplay.innerHTML = timeLeft;
+        timeLeft -=1;
+        }, 1000)
+
+    startBtn.addEventListener("click", displayTimer);
+    }
 
 // this will update the score once you click the correct answer
 function updateScore() {
-    score += 1;
+    score++;
   $("#score")[0].innerHTML = score;
 
 }

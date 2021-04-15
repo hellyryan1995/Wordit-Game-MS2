@@ -211,6 +211,20 @@ h2 {
     vertical-align: auto;
 }
 
+/* ------------------------------- Timer styling */
+#timer {
+    font-size: 28px;
+    text-align: center;
+    margin-top: -130px;
+
+    /*position: absolute;
+    z-index: 1;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+}
+
+
 /* ------------------------------- Media Queries */
 
 @media (max-width: 414px) {
