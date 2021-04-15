@@ -216,15 +216,9 @@ h2 {
     font-size: 28px;
     text-align: center;
     margin-top: -130px;
-
-    /*position: absolute;
-    z-index: 1;
-    top: -30%;
-    left: 50%;
-    transform: translate(-50%, -50%);*/
 }
 
-/* ------------------------------- Media Queries */
+/* ------------------------------- Modal Styling */
 #myModal h3{
     color: #202225;
 }
@@ -254,6 +248,10 @@ h2 {
 
     .rnd-score {
         text-align: center;
+    }
+
+    #timer {
+    margin-top: -160px;
     }
 
     h3 {
