@@ -128,6 +128,8 @@ The player may also use the key commands displayed on the screen.
 
 * https://www.youtube.com/watch?v=vSV_Ml2_A88&ab_channel=CodewithAniaKub%C3%B3w
 
+* https://stackoverflow.com/questions/59040793/how-to-trigger-a-button-click-on-key-press
+
 ### Acknowledgements
 
 
