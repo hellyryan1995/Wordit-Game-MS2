@@ -184,17 +184,11 @@ h2 {
 }
 /* ------------------------------- Commands styling */
 
-.red-command,
-.blue-command,
-.green-command,
-.yellow-command {
+.command {
     display: none;
 }
 
-#red-command-styling,
-#blue-command-styling,
-#green-command-styling,
-#yellow-command-styling {
+#command {
     text-align: center; 
     margin-top: 30%;
     margin-bottom: 30%;
@@ -224,6 +218,14 @@ h2 {
 }
 
 #myModal p{
+    color: #202225;
+}
+
+#myModalOver h3{
+    color: #202225;
+}
+
+#myModalOver p{
     color: #202225;
 }
 
@@ -288,10 +290,7 @@ h2 {
         margin-bottom: 0;
     }
 
-    #red-command-styling,
-    #blue-command-styling,
-    #green-command-styling,
-    #yellow-command-styling {
+    #command {
     margin-top: 0;
     margin-bottom: 0;
 
@@ -348,10 +347,7 @@ h2 {
         margin-bottom: 0;
     }
 
-    #red-command-styling,
-    #blue-command-styling,
-    #green-command-styling,
-    #yellow-command-styling {
+    #command {
         margin-top: 0;
         margin-bottom: 0;
 
@@ -431,10 +427,7 @@ h2 {
         margin-bottom: 0;
     }
 
-    #red-command-styling,
-    #blue-command-styling,
-    #green-command-styling,
-    #yellow-command-styling {
+    #command {
         margin-top: 0;
         margin-bottom: 0;
 
