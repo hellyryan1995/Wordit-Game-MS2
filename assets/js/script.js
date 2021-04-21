@@ -36,16 +36,16 @@ function startGame() {
     removeButton();
     resetScore();
     playGame();
-    displayTimer();
+    displayTimer(3, timeleftDisplay);
 
 }
 
 function playGame() {
-
+    
     // Once game has started this will display the commands
     let command = randomCommand();
     displayCommand(command);
-
+    
     //Enable Game buttons
     document.getElementById("red-button").disabled = false;
     document.getElementById("yellow-button").disabled = false;
@@ -137,11 +137,14 @@ function playGame() {
 }
     
 function endGame() {
-
     endGame.called = true;
 
+    updateHighscore();
+    
+    //Display Game Over Text
     $('#myModalOver').modal('show');
 
+    // Display Start Button Again
     $("#startButton").show();
  
     // Hide Timer
@@ -158,31 +161,36 @@ function endGame() {
 
     //Enables Start Button
     document.getElementById("startButton").disabled = false;
-
 }
 
-const timeleftDisplay = document.querySelector("#timer");
-const startBtn = document.querySelector("#startButton");
-let timeLeft = 3;
+const timeleftDisplay = document.getElementById("timer");
+const startBtn = document.getElementById("startButton");
 
-function displayTimer() {
+   /* console.log("timer starts");
+    let timeLeft = 3;
+
     // Help From Code with Ania Kubów on youtube
-    /*let timeDown = setInterval(function(){
-        if(timeLeft <= 0 ) {
-            endGame();
+    let timeDown = setInterval(function(){
+        if(timeLeft <= 0) {
             clearInterval(timeDown);
-            console.log("timer");
+            endGame();
+            console.log("timer ends");
         }
         if (endGame.called === true) {
             clearInterval(timeDown);
-            console.log("timer-end");
+            let timeLeft = 3;
         }
-
         timeleftDisplay.innerHTML = timeLeft;
         timeLeft -=1;
         }, 1000)
 
-    startBtn.addEventListener("click", displayTimer);*/
+    //startBtn.addEventListener("click", timeLeft = 3);
+}*/
+
+function resetTimer() {
+    console.log("Reset-Score");
+   timeleftDisplay.innerHTML = timeLeft;
+   let timeLeft = 3;
 }
 
 // this will update the score once you click the correct answer
@@ -197,7 +205,18 @@ function resetScore(){
     $('#score').text(score);
 } // help from stackoverflow
 
+let localStorageName = "WorditHighScore";
+let highscore;
+// This will clear highscore once page loads
+window.onload = window.localStorage.clear();
+
 function updateHighscore(){
+        // Help From Phaserjs
+        highScore = localStorage.getItem(localStorageName) == null ? 0 :
+            localStorage.getItem(localStorageName);
 
+        highScore = Math.max(score, highScore);
+        localStorage.setItem(localStorageName, highScore);
+
+        document.getElementById("highScore").textContent = highScore;
 }
-

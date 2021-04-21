@@ -130,6 +130,8 @@ The player may also use the key commands displayed on the screen.
 
 * https://stackoverflow.com/questions/59040793/how-to-trigger-a-button-click-on-key-press
 
+* https://phaserjs.com/saving-high-score
+
 ### Acknowledgements
 
 
