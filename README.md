@@ -40,13 +40,13 @@ practical and effective whilst being played on Desktop, Tablet & Mobile.
 * See how long I have before I'm out of time.
 * Know what score I just earned.
 
-**As a user playing the game I want:**
+**As a Developer Developing this game I want:**
 
-* To be able to understand the game and controls easily.
-* Large clickable buttons on all displays.
-* The ability to see and try to beat my high score.
-* See how long I have before I'm out of time.
-* Know what score I just earned.
+* To ensure the design is minimal with the least amount of distraction from the main focus within the game.
+* Display a popup when the game first loads explaining how to play.
+* Make sure the game is playable on all devices.
+* Make the user's awareness of keyboard controls whilst playing on the desktop.
+* To display how much time the user to select the correct command.
 
 ### Wireframes
 
@@ -85,9 +85,8 @@ You can view the final mockup design below:
 
 ### How to Play
 
-Once you click start and you will have to click the button that corresponds with the WORD display in the centre of the screen, 
-you are following the word and not the background colour of the button, the time between each command will reduce and you progress 
-into the forcing you to speed up on selecting the correct command. 
+Once you click start and you will have to click the button that corresponds with the WORD displayed in the centre of the screen, 
+you are following the word and not the background colour of the button, You will have 35 seconds to get as many as you can correct.
 
 The player may also use the key commands displayed on the screen.
 
@@ -142,7 +141,70 @@ The player may also use the key commands displayed on the screen.
 
 ## Testing
 
+* Devices tested on:
+    * Macbook Pro 13"
+    * Lg 27" Monitor
+    * iPhone 11
+    * All devices in inspector tool.
 
+* Browsers Tested on:
+    * Google Chrome
+    * Safari
+    * Firefox
+
+### User's Stories
+
+* Instructions are displayed on load explaining how to play the game.
+* All text and buttons are large and clear to read.
+* Both high score and game score are always visible on all devices.
+* The timer is always showing during the game.
+* The design with very clean and minimal with very few distractions from the main game.
+* Keyboard commands are displayed at the bottom of the game on desktop view so users are aware they can be used.
+
+### Manual Testing
+
+1. Start button
+    * When clicked it's hidden, making room for random commands and a timer.
+    * A hover effect is shown to ensure users its clickable.
+    * When the game is over via an incorrect click or out of time the start button reappears.
+
+2. Random commands
+    * During the game, one of the four commands from the array will be displayed in the centre of the screen at random.
+    * When correct, a text-shadow will flash green letting users know they are onto the next random command.
+    * Commands are removed if the game has ended.
+
+3. Timer
+    * The timer is displayed as soon as the game begins.
+    * once it reaches 0 the game will end.
+    * Incorrect answers will remove the timer as well.
+
+4. Buttons
+    * Each button matches with the command it corresponds with.
+    * Buttons are disabled when the game has ended.
+    * Buttons are enabled during the game.
+    * All buttons have a hover effect.
+    * When the button that doesn't match the command is clicked the game will end.
+
+5. Score
+    * The score will increase by one every time the correct button is clicked.
+    * When the game has ended the score will remain displayed until the game starts again where it will reset to 0.
+
+6. High score
+    * The high score will remain in place until the page reloads.
+    * Your best score will always replace your current high score.
+
+7. Key commands
+    * Pressing W key will click the red button during the game.
+    * Pressing A key will click the yellow button during the game.
+    * Pressing S key will click the green button during the game.
+    * Pressing D key will click the blue button during the game.
+    * Space Bar will also start the game.
+
+8. On-Page Load
+    * A modal is displayed explaining how to play the game.
+    * All previous current high scores are reset.
+
+### Testing Code
 
 ## Deployment
 
