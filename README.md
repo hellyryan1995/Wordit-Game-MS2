@@ -106,9 +106,39 @@ The player may also use the key commands displayed on the screen.
 
 * I would like your high score to permanently save with a leaderboard so users can compete to be at the top.
 
+* I would like to add sound to the game if I had more time.
+
 ## Technologies Used
 
+* [HTML](https://en.wikipedia.org/wiki/HTML)
+    * For Structuring the site.
 
+* [CSS](https://en.wikipedia.org/wiki/CSS)
+    * For Styling the Site.
+
+* [JS](https://en.wikipedia.org/wiki/JavaScript)
+    * For programming the game.
+
+* [Bootstrap](https://getbootstrap.com/)
+    * For Grid Layout & Components.
+
+* [Google Font](https://fonts.google.com/)
+    * For selected font.
+
+* [JQuery](https://jquery.com/)
+    * Used for certain sections within the script.js file
+
+* [Github](https://github.com/)
+    * Storing project on.
+
+* [Balsamiq](https://balsamiq.com/wireframes/?gclid=Cj0KCQiA3smABhCjARIsAKtrg6JfbE3I-05NWUBL17jlkE6uDkROXDoD5vXo7UJxVKIjsLVwujyaus0aAhAiEALw_wcB)
+    * Creating wireframes on.
+
+* [Google Chrome Developer Tool](https://developers.google.com/web/tools/chrome-devtools)
+    * Checking my game is responsive on multiple different devices.
+
+* [Affinity Designer](https://affinity.serif.com/en-gb/designer/)
+    * Creating Word It! Logo.
 
 ## Testing
 
