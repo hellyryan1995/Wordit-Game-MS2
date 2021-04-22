@@ -270,6 +270,7 @@ The player may also use the key commands displayed on the screen.
     };
 ```
 Problem 2 - Near the end of finishing the game gitpod began to work locally so I wasnt able to push my commits to github.
+
 Problem 2 SOLVED - To fix this I used git pull where I was able to connect everything back to normal, 
 unfortunately in doing this my two commits were duplicated when I finally pushed my project into Github.
 
