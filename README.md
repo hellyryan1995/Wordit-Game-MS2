@@ -172,6 +172,9 @@ The player may also use the key commands displayed on the screen.
     * A hover effect is shown to ensure users its clickable.
     * When the game is over via an incorrect click or out of time the start button reappears.
 
+    ![](assets/images/readme-images/start-button-onhover.png)
+    ![](assets/images/readme-images/start-button-onclick.png)
+
 2. Random commands
     * During the game, one of the four commands from the array will be displayed in the centre of the screen at random.
     * When correct, a text-shadow will flash green letting users know they are onto the next random command.
@@ -189,6 +192,9 @@ The player may also use the key commands displayed on the screen.
     * All buttons have a hover effect.
     * When the button that doesn't match the command is clicked the game will end.
 
+    ![](assets/images/readme-images/buttons-disabled.png)
+    ![](assets/images/readme-images/buttons-enabled.png)
+
 5. Score
     * The score will increase by one every time the correct button is clicked.
     * When the game has ended the score will remain displayed until the game starts again where it will reset to 0.
@@ -196,6 +202,8 @@ The player may also use the key commands displayed on the screen.
 6. High score
     * The high score will remain in place until the page reloads.
     * Your best score will always replace your current high score.
+
+    ![](assets/images/readme-images/score-high-score.png)
 
 7. Key commands
     * Pressing W key will click the red button during the game.
@@ -207,6 +215,8 @@ The player may also use the key commands displayed on the screen.
 8. On-Page Load
     * A modal is displayed explaining how to play the game.
     * All previous current high scores are reset.
+
+    ![](assets/images/readme-images/how-to-play.png)
 
 ### Testing Code
 
