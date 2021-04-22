@@ -1,8 +1,8 @@
 # WordIt Memory Game
 
 Word-It is an interactive memory game inspired by the classic game [Bopit.](https://en.wikipedia.org/wiki/Bop_It)  
-The user will have to select the word given as quickly as possible before the timer runs out, 
-the further you get on in the games the time you have to select the correct word decreases.
+The user will have to select the words given as quickly as possible before the timer runs out, 
+you will be given 35 seconds to get as many right as you can.
 
 [>> View the live site here <<](https://hellyryan1995.github.io/Wordit-Game-MS2/)
 
