@@ -255,10 +255,50 @@ The player may also use the key commands displayed on the screen.
         }   
     };
 ```
+Problem 2 - Near the end of finishing the game gitpod began to work locally so I wasnt able to push my commits to github.
+Problem 2 SOLVED - To fix this I used git pull where I was able to connect everything back to normal, 
+unfortunately in doing this my two commits were duplicated when I finally pushed my project into Github.
 
 ## Deployment
 
+This project was developed using GitPod and commits where made throught git and was pushed to github as my version control.
 
+Take the following steps to deploy this project from its GitHub repository:
+
+1. Login to [GitHub](https://github.com/)
+2. Select "Repositories" on the menu.
+3. Whilst in the list of Repositories select the one called - ["Wordit-Game-MS2"](https://github.com/hellyryan1995/Wordit-Game-MS2).
+4. On the second menu from the top select "Settings".
+5. Scroll down until you get to "GitHub Pages".
+6. Under source change the dropdown menu from "none" to "Master" and click save.
+7. The page will automatically refresh.
+8. Scroll down to "GitHub Pages" again and you will see the link to the deployed site.
+
+### How to run this project locally
+
+1. Create and account with [GitHub](https://github.com/)
+2. Use Chrome browser.
+3. Install the [GitPod](https://chrome.google.com/webstore/detail/gitpod-dev-environments-i/dodmmooeoklaejobgleioelladacbeki) browser extension.
+4. Login to your GitPod account or sign up [here](https://www.gitpod.io/)
+5. Go into the GitHub repository called ["Wordit-Game-MS2"](https://github.com/hellyryan1995/Wordit-Game-MS2)
+6. Select the green button named "GitPod"
+8. This will open a new Gitpod workspace containing the code so you can work locally.
+
+Here are the steps to take to clone the project:
+
+1. From GitHub, venture over to "Repositories" from the second menu down.
+2. selected respitory project called ["Wordit-Game-MS2"](https://github.com/hellyryan1995/Wordit-Game-MS2)
+3. To the left of the green GitPod button select the button name "code".
+4. you will be given the option to clone or download the project.
+5. Under clone there is a HTTPS which you should copy.
+6. In your Local IDE on your terminal.
+7. Change your current working directory to the location where you want the clone to be made.
+8. Enter "git clone" and paste in the code you copied in step 5
+```
+git clone https://github.com/hellyryan1995/Wordit-Game-MS2.git
+
+```
+9. Press enter and your local clone will be created.
 
 ## Credits
 
