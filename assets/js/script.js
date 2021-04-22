@@ -117,36 +117,36 @@ function playGame() {
 // Hotkey Commands when the key is pressed the button will be clicked.
 
 // Help From Stack Overflow
-    window.addEventListener("keydown", redKey, true);
-    function redKey(e){
+window.addEventListener("keydown", redKey, true);
+function redKey(e){
     if(e.keyCode == 87){ // This makes the key W click the red button
         document.getElementById("red-button").click();
     }
 }
 
-   window.addEventListener("keydown", yellowKey, true);
-    function yellowKey(e){
+window.addEventListener("keydown", yellowKey, true);
+function yellowKey(e){
     if(e.keyCode == 65){ // This makes the key A click the yellow button
         document.getElementById("yellow-button").click();
     }
 }
 
-  window.addEventListener("keydown", greenKey, true);
-    function greenKey(e){
+window.addEventListener("keydown", greenKey, true);
+function greenKey(e){
     if(e.keyCode == 83){ // This makes the key S click the green button
         document.getElementById("green-button").click();
     }
 }
 
-  window.addEventListener("keydown", blueKey, true);
+window.addEventListener("keydown", blueKey, true);
     function blueKey(e){
     if(e.keyCode == 68){ // This makes the key D click the blue button
         document.getElementById("blue-button").click();
     }
 }
 
-        // Used to start the game
- window.addEventListener("keydown", startKey, true);
+    // Used to start the game
+window.addEventListener("keydown", startKey, true);
     function startKey(e){
     if(e.keyCode == 32){ //Spacebar
         document.getElementById("startButton").click();
