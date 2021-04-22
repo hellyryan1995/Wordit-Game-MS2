@@ -132,6 +132,8 @@ The player may also use the key commands displayed on the screen.
 
 * https://phaserjs.com/saving-high-score
 
+* https://stackoverflow.com/questions/20618355/how-to-write-a-countdown-timer-in-javascript
+
 ### Acknowledgements
 
 

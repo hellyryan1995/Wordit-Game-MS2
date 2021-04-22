@@ -14,7 +14,7 @@ function randomCommand(){
 // display random command word
 function displayCommand(command) {
     console.log("Show random word");
-    document.getElementById("command").textContent = command
+    document.getElementById("command").textContent = command;
 
      if (command === "Red"){
         $("h2").removeClass("command");
@@ -36,7 +36,8 @@ function startGame() {
     removeButton();
     resetScore();
     playGame();
-    displayTimer(3, timeleftDisplay);
+    displayTimer(35, timeleftDisplay);
+    $("#timer").show();
 
 }
 
@@ -58,6 +59,10 @@ function playGame() {
     // Once the buttons are clicked and correct the game will continue if not then the game will end
     document.getElementById("red-button").onclick = function() {
         if (command === 'Red') {
+            document.getElementById("command").style.textShadow = "10px 10px 30px #00E384";
+            setTimeout(function(){
+             document.getElementById("command").style.textShadow = "none";  
+            }, 100);
             updateScore();
             playGame();
         } else {
@@ -68,6 +73,10 @@ function playGame() {
 
     document.getElementById("yellow-button").onclick = function(){
         if (command === 'Yellow') {
+            document.getElementById("command").style.textShadow = "10px 10px 30px #00E384";
+            setTimeout(function(){
+             document.getElementById("command").style.textShadow = "none";  
+            }, 100);
             updateScore();
             playGame();
         } else {
@@ -78,6 +87,10 @@ function playGame() {
 
     document.getElementById("green-button").onclick = function(){
         if (command === 'Green') {
+            document.getElementById("command").style.textShadow = "10px 10px 30px #00E384";
+            setTimeout(function(){
+             document.getElementById("command").style.textShadow = "none";  
+            }, 100);
             updateScore();
             playGame();
         } else {
@@ -88,6 +101,10 @@ function playGame() {
 
     document.getElementById("blue-button").onclick = function(){
         if (command === 'Blue') {
+            document.getElementById("command").style.textShadow = "10px 10px 30px #00E384";
+            setTimeout(function(){
+             document.getElementById("command").style.textShadow = "none";  
+            }, 100);
             updateScore();
             playGame();
         } else {
@@ -164,33 +181,32 @@ function endGame() {
 }
 
 const timeleftDisplay = document.getElementById("timer");
-const startBtn = document.getElementById("startButton");
+//Help from stack Overflow & Help From Code with Ania Kubów on youtube
+function displayTimer(duration, timeleftDisplay) {
+    
+    let timeLeft = 0;
+    let timer = duration, seconds;
+    let timeDown = setInterval(function () {
 
-   /* console.log("timer starts");
-    let timeLeft = 3;
+        seconds = parseInt(timer % 60, 10);
+        timeLeft +=1;
 
-    // Help From Code with Ania Kubów on youtube
-    let timeDown = setInterval(function(){
-        if(timeLeft <= 0) {
-            clearInterval(timeDown);
+        timeleftDisplay.textContent = seconds;
+
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+        if(timeLeft === 36) {
             endGame();
+            clearInterval(timeDown);
             console.log("timer ends");
         }
         if (endGame.called === true) {
             clearInterval(timeDown);
-            let timeLeft = 3;
         }
-        timeleftDisplay.innerHTML = timeLeft;
-        timeLeft -=1;
-        }, 1000)
-
-    //startBtn.addEventListener("click", timeLeft = 3);
-}*/
-
-function resetTimer() {
-    console.log("Reset-Score");
-   timeleftDisplay.innerHTML = timeLeft;
-   let timeLeft = 3;
+    }, 1000);
 }
 
 // this will update the score once you click the correct answer

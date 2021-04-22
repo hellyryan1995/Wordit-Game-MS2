@@ -182,6 +182,10 @@ h2 {
 .btn-warning:disabled {
     color:#fff;
 }
+
+.btn-warning:focus {
+    box-shadow: none;
+}
 /* ------------------------------- Commands styling */
 
 .command {
