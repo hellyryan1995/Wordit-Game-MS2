@@ -206,6 +206,56 @@ The player may also use the key commands displayed on the screen.
 
 ### Testing Code
 
+* W3C Markup Validator Results
+    * Word It Game - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fhellyryan1995.github.io%2FWordit-Game-MS2%2F)
+
+* W3C CSS Validator
+
+![CSS Validator Results](assets/images/readme-images/wordit-css-validator.png)
+
+* Sites Performace
+
+**Desktop**
+![Performance on Dekstop](assets/images/readme-images/lighthouse-performance-desktop.png)
+
+**Mobile**
+![Performance on Mobile](assets/images/readme-images/lighthouse-performance-mobile.png)
+
+### Bugs Discovered
+
+* Problem 1 - Using this code was causing the gameloop to get stuck within endgame.
+```
+    $("#red-button").click(function() {
+        if (command === 'Red') {
+            document.getElementById("command").style.textShadow = "10px 10px 30px #00E384";
+            setTimeout(function(){
+             document.getElementById("command").style.textShadow = "none";  
+            }, 100);
+            updateScore();
+            playGame();
+        } else {
+            endGame();
+            $('#myModalOver').modal('show');
+        }   
+    });
+``` 
+* Problem 1 SOLVED - So after a full week of not understanding why it wouldnt work, I tried this and it started to work perfectly.
+```
+    document.getElementById("red-button").onclick = function() {
+        if (command === 'Red') {
+            document.getElementById("command").style.textShadow = "10px 10px 30px #00E384";
+            setTimeout(function(){
+             document.getElementById("command").style.textShadow = "none";  
+            }, 100);
+            updateScore();
+            playGame();
+        } else {
+            endGame();
+            $('#myModalOver').modal('show');
+        }   
+    };
+```
+
 ## Deployment
 
 
