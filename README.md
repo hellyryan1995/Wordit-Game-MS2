@@ -122,19 +122,23 @@ The player may also use the key commands displayed on the screen.
 
 ### Content
 
-* https://www.w3schools.com/jsref/met_element_getattribute.asp
+* [This](https://stackoverflow.com/questions/7381712/how-to-reset-my-score-javascript) was used to help me rest the score within the game.
 
-* https://stackoverflow.com/questions/7381712/how-to-reset-my-score-javascript
+* [This](https://www.youtube.com/watch?v=vSV_Ml2_A88&ab_channel=CodewithAniaKub%C3%B3w) & [This](https://stackoverflow.com/questions/20618355/how-to-write-a-countdown-timer-in-javascript)
+was used to help display the timer.
 
-* https://www.youtube.com/watch?v=vSV_Ml2_A88&ab_channel=CodewithAniaKub%C3%B3w
+* [This](https://stackoverflow.com/questions/59040793/how-to-trigger-a-button-click-on-key-press) was used to add hotKey press to click a button and was modified to work with the game.
 
-* https://stackoverflow.com/questions/59040793/how-to-trigger-a-button-click-on-key-press
+* [This](https://phaserjs.com/saving-high-score) was used to add a highscore within the game and was modified to display in the game and clear on page load.
 
-* https://phaserjs.com/saving-high-score
-
-* https://stackoverflow.com/questions/20618355/how-to-write-a-countdown-timer-in-javascript
 
 ### Acknowledgements
+
+* Help from some students in the slack chat.
+
+* I recieved help from my mentor.
+
+* I went over some javascript essentials & interactive frontend lessons to help jog my memory.
 
 
 
